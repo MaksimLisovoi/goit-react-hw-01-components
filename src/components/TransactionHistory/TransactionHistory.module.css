@@ -1,11 +1,14 @@
+.transHistory {
+  margin: 0 auto;
+  width: 300px;
+
+  box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
+}
+
 .tableHead {
   background-color: #00bcd5;
   color: white;
-  width: 400px;
-}
-.transHistory {
-  width: 800px;
-  min-width: 400px;
+  width: 300px;
 }
 .tableRow {
   background-color: #fff;

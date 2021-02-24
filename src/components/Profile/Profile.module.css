@@ -1,8 +1,11 @@
 .profile {
   width: 300px;
-  padding-top: 20px;
+  padding-top: 70px;
   background-color: white;
   text-align: center;
+  margin: 0 auto;
+
+  box-shadow: 0px 4px 8px 0px rgba(34, 60, 80, 0.2);
 }
 
 .avatar {
@@ -23,6 +26,8 @@
   display: flex;
   list-style: none;
   padding: 0;
+  margin: 0;
+  margin-bottom: 15px;
   background-color: #f3f6f9;
 }
 .statsList {
