@@ -1,7 +1,6 @@
-import statisticalData from "../../db/statistical-data.json";
 import s from "./Statistics.module.css";
+import PropTypes from "prop-types";
 
-console.log(statisticalData);
 const Statistics = ({ title, stats }) => {
   return (
     <section className={s.statistics}>
@@ -17,6 +16,11 @@ const Statistics = ({ title, stats }) => {
       </ul>
     </section>
   );
+};
+
+Statistics.propTypes = {
+  title: PropTypes.string.isRequired,
+  stats: PropTypes.array,
 };
 
 export default Statistics;

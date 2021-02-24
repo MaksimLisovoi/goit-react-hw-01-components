@@ -1,11 +1,7 @@
-import user from "../../db/user.json";
 import s from "./Profile.module.css";
+import PropTypes from "prop-types";
 
-console.log(user);
-
-const Profile = ({ data }) => {
-  console.log(user);
-  const { name, tag, location, avatar, stats } = data;
+const Profile = ({ name, tag, location, avatar, stats }) => {
   return (
     <div className={s.profile}>
       <div className={s.description}>
@@ -31,6 +27,14 @@ const Profile = ({ data }) => {
       </ul>
     </div>
   );
+};
+
+Profile.propTypes = {
+  tag: PropTypes.string,
+  name: PropTypes.string.isRequired,
+  location: PropTypes.string,
+  avatar: PropTypes.string,
+  stats: PropTypes.objectOf(PropTypes.number),
 };
 
 export default Profile;
